@@ -233,6 +233,7 @@ var helpers = {
         loaded = loaded && (this.state.lazyLoadedList.indexOf(i) >= 0);
         if (!loaded) {
           slidesToLoad.push(i);
+          console.log(slidesToLoad);
         }
       }
       if (!loaded) {
