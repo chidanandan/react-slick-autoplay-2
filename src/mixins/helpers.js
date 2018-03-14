@@ -238,7 +238,6 @@ var helpers = {
         this.setState({
           lazyLoadedList: this.state.lazyLoadedList.concat(slidesToLoad)
         });
-        console.log(this.state.lazyLoadedList);
       }
     }
 
