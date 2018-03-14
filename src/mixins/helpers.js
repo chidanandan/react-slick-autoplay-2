@@ -229,7 +229,6 @@ var helpers = {
       var loaded = true;
       var slidesToLoad = [];
       for (var i = targetSlide; i < targetSlide + this.props.slidesToShow + 1; i++ ) {
-        console.log(targetSlide);
         loaded = loaded && (this.state.lazyLoadedList.indexOf(i) >= 0);
         if (!loaded) {
           slidesToLoad.push(i);
