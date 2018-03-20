@@ -228,7 +228,7 @@ var helpers = {
     if (this.props.lazyLoad) {
       var loaded = true;
       var slidesToLoad = [];
-      for (var i = currentSlide; i < currentSlide + 1 + this.props.slidesToShow + 1; i++ ) {
+      for (var i = currentSlide; i < currentSlide + 1 + this.props.slidesToShow; i++ ) {
         loaded = loaded && (this.state.lazyLoadedList.indexOf(i) >= 0);
         if (!loaded) {
           slidesToLoad.push(i);
